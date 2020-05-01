@@ -7,15 +7,10 @@
     "module-scripts": "bin/module-scripts"
   },
   "scripts": {
-    "component": "node scripts/component.js",
-    "class": "node scripts/class.js",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "lint": "eslint . --ext .js,.jsx,.mjs,.cjs,.ts,.tsx",
     "lint:ci": "yarn lint --max-warnings=0",
-    "lint:fix": "yarn lint --fix --cache"
+    "lint:fix": "yarn lint --fix --cache",
+    "prepublish": "yarn lint"
   },
   "dependencies": {
     "@babel/cli": "^7.8.4",
