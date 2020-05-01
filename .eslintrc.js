@@ -38,7 +38,7 @@ module.exports = {
 
 function settings() {
 	return {
-		plugins: ["babel", "typescript", "@typescript-eslint"],
+		plugins: ["babel", "@typescript-eslint"],
 		extends: [
 			"airbnb-base",
 			"react-app",
