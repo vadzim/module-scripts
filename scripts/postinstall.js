@@ -1,23 +1,16 @@
 #!/usr/bin/env node
 
+require("core-js")
 const fs = require("fs").promises
-const path = require("path")
-const { findFile } = require("../lib/find-file")
-const { scripts } = require("../lib/cli")
+const { findFiles } = require("../lib/find-file")
+const { at } = require("../lib/at")
+const { updatePackageJson } = require("../lib/updatePackageJson")
 
 const main = async () => {
-	const packageJsonFile = await findFile("package.json", path.dirname(process.cwd()))
+	const packageJsonFile = await at(findFiles("package.json", __dirname), 1)
 	const packageJson = JSON.parse(await fs.readFile(packageJsonFile))
 
-	const newPackageJson = {
-		...packageJson,
-		scripts: {
-			...Object.fromEntries(Object.keys(scripts).map(key => [key, `module-scripts ${key}`])),
-			...packageJson.scripts,
-		},
-	}
-
-	await fs.writeFile(packageJsonFile, JSON.stringify(newPackageJson, undefined, "  "))
+	await fs.writeFile(packageJsonFile, JSON.stringify(updatePackageJson(packageJson), undefined, "  "))
 }
 
 main()

@@ -1,18 +1,16 @@
 #!/usr/bin/env node
 
+require("core-js")
 const fs = require("fs").promises
-const path = require("path")
-const { findFile } = require("../lib/find-file")
+const { findFiles } = require("../lib/find-file")
+const { at } = require("../lib/at")
+const { cleanupPackageJson } = require("../lib/cleanupPackageJson")
 
 const main = async () => {
-	const packageJsonFile = await findFile("package.json", path.dirname(process.cwd()))
+	const packageJsonFile = await at(findFiles("package.json", __dirname), 1)
 	const packageJson = JSON.parse(await fs.readFile(packageJsonFile))
 
-	if (packageJson.scripts)
-		for (const [key, value] of Object.entries(packageJson.scripts))
-			if (/^module-scripts (\w|:)+$/.test(value)) delete packageJson.scripts[key]
-
-	await fs.writeFile(packageJsonFile, JSON.stringify(packageJson, undefined, "  "))
+	await fs.writeFile(packageJsonFile, JSON.stringify(cleanupPackageJson(packageJson), undefined, "  "))
 }
 
 main()
