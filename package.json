@@ -6,6 +6,21 @@
   "bin": {
     "module-scripts": "scripts/module-scripts.js"
   },
+  "description": "Opinioned scripts for maintaing npm module. Includes linting, testing, transpiling.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vadzim/module-scripts.git"
+  },
+  "keywords": [
+    "npm",
+    "module",
+    "scripts"
+  ],
+  "author": "Vadzim Zieńka <vadzim@vadzim.info>",
+  "bugs": {
+    "url": "https://github.com/vadzim/module-scripts/issues"
+  },
+  "homepage": "https://github.com/vadzim/module-scripts#readme",
   "scripts": {
     "lint": "eslint . --ext .js,.jsx,.mjs,.cjs,.ts,.tsx",
     "lint:ci": "yarn lint --max-warnings=0",
@@ -54,5 +69,6 @@
     "prettier": "^2.0.5",
     "rimraf": "^3.0.2",
     "typescript": "^3.8.3"
-  }
+  },
+  "devDependencies": {}
 }
