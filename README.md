@@ -30,7 +30,7 @@ Basically your `package.json` starts to look like
     "test": "module-scripts test",
     "test:debug": "module-scripts test:debug",
     "coverage": "module-scripts coverage",
-    "prepare": "module-scripts prepare",
+    "prepack": "module-scripts prepack",
     "prepublishOnly": "module-scripts prepublishOnly"
   },
   "devDependencies": {
@@ -82,7 +82,7 @@ Runs tests in debug mode. Opens browser debug tools. Do not forget to insert `de
 
 TODO: Calculates test coverage.
 
-### prepare
+### prepack
 
 Builds module after installation from source, e.g. from github.
 
