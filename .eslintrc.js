@@ -111,7 +111,7 @@ function settings() {
 			"prefer-arrow-callback": ["warn", { allowNamedFunctions: true }],
 			"max-classes-per-file": "off",
 			"arrow-body-style": ["warn", "as-needed", { requireReturnForObjectLiteral: false }],
-			"no-unused-vars": "warn",
+			"no-unused-vars": "off", // @typescript-eslint/no-unused-vars is enough
 			"prefer-template": "warn",
 			"import/order": "warn",
 			"no-useless-constructor": "off",
