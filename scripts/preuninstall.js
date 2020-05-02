@@ -10,8 +10,7 @@ const main = async () => {
 
 	if (packageJson.scripts)
 		for (const [key, value] of Object.entries(packageJson.scripts))
-			if (/^module-scripts (\w|:)+$/.test(value))
-				delete packageJson.scripts[key]
+			if (/^module-scripts (\w|:)+$/.test(value)) delete packageJson.scripts[key]
 
 	await fs.writeFile(packageJsonFile, JSON.stringify(packageJson, undefined, "  "))
 }
