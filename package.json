@@ -10,7 +10,7 @@
     "lint": "eslint . --ext .js,.jsx,.mjs,.cjs,.ts,.tsx",
     "lint:ci": "yarn lint --max-warnings=0",
     "lint:fix": "yarn lint --fix --cache",
-    "prepublish": "yarn lint"
+    "prepublishOnly": "yarn lint"
   },
   "dependencies": {
     "@babel/cli": "^7.8.4",
