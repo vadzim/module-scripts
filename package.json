@@ -4,7 +4,7 @@
   "main": "lib/index.js",
   "license": "MIT",
   "bin": {
-    "module-scripts": "bin/module-scripts"
+    "module-scripts": "scripts/module-scripts.js"
   },
   "scripts": {
     "lint": "eslint . --ext .js,.jsx,.mjs,.cjs,.ts,.tsx",
