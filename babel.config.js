@@ -16,14 +16,14 @@ module.exports = api => {
 		},
 		module: {
 			presets: [
-				[require.resolve("@babel/preset-env"), { targets: { node: 14 } }],
+				[require.resolve("@babel/preset-env"), { modules: false, shippedProposals: true, targets: { node: 14 } }],
 				require.resolve("@babel/preset-react"),
 			],
 			plugins: [],
 		},
 		esnext: {
 			presets: [
-				[require.resolve("@babel/preset-env"), { targets: { safari: "tp" } }],
+				[require.resolve("@babel/preset-env"), { modules: false, shippedProposals: true, targets: { safari: "tp" } }],
 				require.resolve("@babel/preset-react"),
 			],
 			plugins: [],
