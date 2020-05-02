@@ -12,7 +12,7 @@
     "lint:fix": "yarn lint --fix --cache",
     "postinstall": "scripts/postinstall.js",
     "preuninstall": "scripts/preuninstall.js",
-    "prepublishOnly": "yarn lint"
+    "prepublishOnly": "yarn lint:ci"
   },
   "dependencies": {
     "@babel/cli": "^7.8.4",
