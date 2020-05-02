@@ -1,6 +1,6 @@
 {
   "name": "module-scripts",
-  "version": "0.0.7",
+  "version": "0.0.10",
   "main": "lib/index.js",
   "license": "MIT",
   "bin": {
@@ -10,6 +10,8 @@
     "lint": "eslint . --ext .js,.jsx,.mjs,.cjs,.ts,.tsx",
     "lint:ci": "yarn lint --max-warnings=0",
     "lint:fix": "yarn lint --fix --cache",
+    "postinstall": "scripts/postinstall.js",
+    "preuninstall": "scripts/preuninstall.js",
     "prepublishOnly": "yarn lint"
   },
   "dependencies": {
