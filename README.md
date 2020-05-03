@@ -2,20 +2,15 @@
 
 Opinioned scripts for maintaing npm module. Includes linting, testing, transpiling.
 
-To use run `npx module-scripts init` in your package folder.
+To install run
+```
+npx module-scripts init
+```
+in your package folder.
 
-`module-scripts` assumes that you store source files under `src` folder.
+`module-scripts` assumes that your source is stored under `src` folder.
 
 Caution: for now it formats the source code with tabs on and semicolons off. Other options are in TODO.
-
-Installation:
-```
-npm i --save-dev module-scripts
-```
-or
-```
-yarn add --dev module-scripts
-```
 
 Basically your `package.json` starts to look like
 ```json
