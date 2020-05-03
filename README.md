@@ -45,9 +45,9 @@ Usage: `module-scripts <command>`
 
 ## Commands:
 
-### build
+### compile
 
-Builds content of `src` folder and creates three folders with compiled stuff. Supports babel macros.
+Compiles the content of the `src` folder and creates three folders with compiled stuff. Supports babel macros.
 
 - `dist/commonjs/`
 transplies imports to `require` and most of modern syntax.
@@ -57,6 +57,18 @@ transplies less syntax and preserves imports.
 
 - `dist/esnext/`
 preserves as much as possible, but still transpiles to standard javascript. Mostly removes type declarations.
+
+### clean
+
+Removes `dist` folder.
+
+### types
+
+Runs `typescript` for type checking and generates type definitions in `dist/types/`.
+
+### build
+
+Cleans the folder, lints, compiles and type checks the code.
 
 ### lint
 
@@ -80,12 +92,20 @@ Runs tests in debug mode. Opens browser debug tools. Do not forget to insert `de
 
 ### coverage
 
-TODO: Calculates test coverage.
+Calculates test coverage.
 
 ### prepack
 
-Builds module after installation from source, e.g. from github.
+Builds module after installation from source, e.g. from github and before publishing your package.
+
+### preversion
+
+Lints the code before incrementing the package version.
 
 ### prepublishOnly
 
 Lints and tests to ensure all is ok before publishing.
+
+### postpublish
+
+Pushes commits to remote git.
