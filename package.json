@@ -26,7 +26,8 @@
     "lint:ci": "yarn lint --max-warnings=0",
     "lint:fix": "yarn lint --fix --cache",
     "preversion": "npm run --silent lint:ci",
-    "prepublishOnly": "npm run --silent lint:ci"
+    "prepublishOnly": "npm run --silent lint:ci",
+    "postpublish": "git push --follow-tags"
   },
   "dependencies": {
     "@babel/cli": "^7.8.4",
