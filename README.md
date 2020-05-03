@@ -2,9 +2,9 @@
 
 Opinioned scripts for maintaing npm module. Includes linting, testing, transpiling.
 
-`module-scripts` assumes that you store source files under `src` folder.
+To use run `npx module-scripts init` in your package folder.
 
-Tip: please don't install or run if you have uncommited changes in your source ;)
+`module-scripts` assumes that you store source files under `src` folder.
 
 Caution: for now it formats the source code with tabs on and semicolons off. Other options are in TODO.
 
