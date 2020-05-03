@@ -25,9 +25,10 @@
     "lint": "eslint . --ext .js,.jsx,.mjs,.cjs,.ts,.tsx",
     "lint:ci": "yarn lint --max-warnings=0",
     "lint:fix": "yarn lint --fix --cache",
-    "postinstall": "scripts/postinstall.js",
-    "preuninstall": "scripts/preuninstall.js",
-    "prepublishOnly": "yarn lint:ci"
+    "install": "node scripts/install.js",
+    "uninstall": "node scripts/uninstall.js",
+    "preversion": "npm run --silent lint:ci",
+    "prepublishOnly": "npm run --silent lint:ci"
   },
   "dependencies": {
     "@babel/cli": "^7.8.4",
