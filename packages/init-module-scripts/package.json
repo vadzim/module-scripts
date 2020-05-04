@@ -1,10 +1,9 @@
 {
   "name": "init-module-scripts",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "installs module-scripts to your project",
-  "main": "init-module-scripts.js",
   "bin": {
-    "init-module-scripts": "node init-module-scripts.js"
+    "init-module-scripts": "bin.js"
   },
   "scripts": {
     "prepublish": "npx rollup -c rollup.config.js"
