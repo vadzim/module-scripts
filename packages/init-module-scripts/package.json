@@ -1,0 +1,27 @@
+{
+  "name": "init-module-scripts",
+  "version": "0.0.0",
+  "description": "installs module-scripts to your project",
+  "main": "index.js",
+  "bin": {
+    "init-module-scripts": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vadzim Zieńka <vadzim@vadzim.info>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vadzim/module-scripts.git"
+  },
+  "keywords": [
+    "npm",
+    "module",
+    "scripts"
+  ],
+  "bugs": {
+    "url": "https://github.com/vadzim/module-scripts/issues"
+  },
+  "homepage": "https://github.com/vadzim/module-scripts#readme"
+}
