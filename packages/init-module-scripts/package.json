@@ -1,6 +1,6 @@
 {
   "name": "init-module-scripts",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "installs module-scripts to your project",
   "bin": {
     "init-module-scripts": "bin.js"
