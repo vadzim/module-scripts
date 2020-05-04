@@ -2,12 +2,12 @@
   "name": "init-module-scripts",
   "version": "0.1.0",
   "description": "installs module-scripts to your project",
-  "main": "index.js",
+  "main": "init-module-scripts.js",
   "bin": {
-    "init-module-scripts": "index.js"
+    "init-module-scripts": "node init-module-scripts.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublish": "npx rollup -c rollup.config.js"
   },
   "author": "Vadzim Zieńka <vadzim@vadzim.info>",
   "license": "MIT",
@@ -23,5 +23,6 @@
   "bugs": {
     "url": "https://github.com/vadzim/module-scripts/issues"
   },
-  "homepage": "https://github.com/vadzim/module-scripts#readme"
+  "homepage": "https://github.com/vadzim/module-scripts#readme",
+  "dependencies": {}
 }

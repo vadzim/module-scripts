@@ -1,5 +1,11 @@
-#!/usr/bin/env node
+const { installDependency } = require("../../lib/packageJson/installDependency")
+const { initPackageJson } = require("../../lib/initPackageJson")
+const scripts = require("./scripts.json")
+const { name } = require("../../package.json")
 
-const { spawn } = require("child_process")
+const main = async () => {
+	await installDependency(name)
+	await initPackageJson(scripts)
+}
 
-spawn("npx", ["module-scripts", "init"], { stdio: "inherit" }).on("exit", code => process.exit(code))
+main()
