@@ -1,6 +1,8 @@
 # module-scripts
 
-Opinioned scripts for maintaing npm module. Includes linting, testing, transpiling.
+Opinioned scripts for maintaing npm module. Includes linting, testing, transpiling, type checking.
+
+It's like `create-react-app`, but for packages or librarires.
 
 To install run
 ```
