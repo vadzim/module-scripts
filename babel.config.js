@@ -10,6 +10,7 @@ module.exports = api => {
 				require.resolve("@babel/preset-react"),
 			],
 			plugins: [
+				[require.resolve("@babel/plugin-transform-modules-commonjs"), { loose: true }],
 				require.resolve("@babel/plugin-transform-strict-mode"),
 				require.resolve("babel-plugin-add-module-exports"),
 			],
