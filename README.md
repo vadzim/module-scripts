@@ -18,6 +18,9 @@ Basically your `package.json` starts to look like
   "module": "dist/module/index.js",
   "esnext": "dist/esnext/index.js",
   "scripts": {
+    "compile": "module-scripts compile",
+    "clean": "module-scripts clean",
+    "types": "module-scripts types",
     "build": "module-scripts build",
     "lint": "module-scripts lint",
     "lint:fix": "module-scripts lint:fix",
