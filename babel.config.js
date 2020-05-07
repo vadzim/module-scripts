@@ -8,6 +8,7 @@ module.exports = api => {
 			presets: [
 				[require.resolve("@babel/preset-env"), { targets: { node: 10 } }],
 				require.resolve("@babel/preset-react"),
+				require.resolve("@babel/preset-typescript"),
 			],
 			plugins: [
 				[require.resolve("@babel/plugin-transform-modules-commonjs"), { loose: true }],
@@ -19,6 +20,7 @@ module.exports = api => {
 			presets: [
 				[require.resolve("@babel/preset-env"), { modules: false, shippedProposals: true, targets: { node: 14 } }],
 				require.resolve("@babel/preset-react"),
+				require.resolve("@babel/preset-typescript"),
 			],
 			plugins: [],
 		},
@@ -26,6 +28,7 @@ module.exports = api => {
 			presets: [
 				[require.resolve("@babel/preset-env"), { modules: false, shippedProposals: true, targets: { safari: "tp" } }],
 				require.resolve("@babel/preset-react"),
+				require.resolve("@babel/preset-typescript"),
 			],
 			plugins: [],
 		},
@@ -33,6 +36,7 @@ module.exports = api => {
 			presets: [
 				[require.resolve("@babel/preset-env"), { targets: { node: 12 } }],
 				require.resolve("@babel/preset-react"),
+				require.resolve("@babel/preset-typescript"),
 			],
 			plugins: [],
 		},
