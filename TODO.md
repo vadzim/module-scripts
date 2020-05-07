@@ -1,3 +1,6 @@
+- colorize messages like 'building', 'pushing', 'testing' etc.
+
+- move typings to `dist/module` folder
 
 - add integral tests:
 	- test should
