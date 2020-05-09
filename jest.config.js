@@ -7,6 +7,7 @@ module.exports = {
 	...defaults,
 	verbose: true,
 	moduleFileExtensions: [...defaults.moduleFileExtensions, "ts", "tsx"],
+	testPathIgnorePatterns: [".d.ts$"],
 	transform: {
 		"\\.[jt]sx?$": [require.resolve("babel-jest"), babelConfig()],
 	},
