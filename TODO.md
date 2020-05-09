@@ -1,5 +1,7 @@
 - add a test for tsc downlevelIteration - should compile iteration over Iterable<T>
 
+- add a test: to run jest for .d.ts files
+
 - call npm with require npm, not with child_process.spawn
 
 - storybook support
