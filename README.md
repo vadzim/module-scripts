@@ -4,7 +4,7 @@ Opinioned scripts for maintaing npm module. Includes linting, testing, transpili
 
 It's like `create-react-app`, but for packages or librarires.
 
-To install run
+To install or update run
 ```
 npx module-scripts init
 ```
