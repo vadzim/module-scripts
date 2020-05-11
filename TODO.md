@@ -1,3 +1,8 @@
+
+- fix init-module-scripts/index.js to be run not only in the project root
+
+
+
 - add a test for tsc downlevelIteration - should compile iteration over Iterable<T>
 
 - add a test: to run jest for .d.ts files
