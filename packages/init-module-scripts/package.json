@@ -1,6 +1,6 @@
 {
   "name": "nmx",
-  "version": "0.1.2",
+  "version": "0.1.7",
   "description": "installs module-scripts to your project",
   "bin": {
     "nmx": "bin.js"
