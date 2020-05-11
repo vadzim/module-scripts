@@ -1,12 +1,12 @@
 {
-  "name": "init-module-scripts",
-  "version": "0.1.5",
+  "name": "nmx",
+  "version": "0.1.2",
   "description": "installs module-scripts to your project",
   "bin": {
-    "init-module-scripts": "bin.js"
+    "nmx": "bin.js"
   },
   "scripts": {
-    "prepublish": "npx rollup -c rollup.config.js"
+    "prepare": "npx rollup -c rollup.config.js"
   },
   "author": "Vadzim Zieńka <vadzim@vadzim.info>",
   "license": "MIT",

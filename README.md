@@ -6,7 +6,7 @@ It's like `create-react-app`, but for packages or librarires.
 
 To install or update run
 ```
-npx module-scripts init
+npx nmx init
 ```
 in your package folder.
 
@@ -20,18 +20,18 @@ Basically your `package.json` starts to look like
   "module": "dist/module/index.js",
   "esnext": "dist/esnext/index.js",
   "scripts": {
-    "compile": "module-scripts compile",
-    "clean": "module-scripts clean",
-    "types": "module-scripts types",
-    "build": "module-scripts build",
-    "lint": "module-scripts lint",
-    "lint:fix": "module-scripts lint:fix",
-    "lint:ci": "module-scripts lint:ci",
-    "test": "module-scripts test",
-    "test:debug": "module-scripts test:debug",
-    "coverage": "module-scripts coverage",
-    "prepack": "module-scripts prepack",
-    "prepublishOnly": "module-scripts prepublishOnly"
+    "compile": "nmx compile",
+    "clean": "nmx clean",
+    "types": "nmx types",
+    "build": "nmx build",
+    "lint": "nmx lint",
+    "lint:fix": "nmx lint:fix",
+    "lint:ci": "nmx lint:ci",
+    "test": "nmx test",
+    "test:debug": "nmx test:debug",
+    "coverage": "nmx coverage",
+    "prepack": "nmx prepack",
+    "prepublishOnly": "nmx prepublishOnly"
   },
   "devDependencies": {
     "module-scripts": "...",

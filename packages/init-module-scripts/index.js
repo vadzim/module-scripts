@@ -1,14 +1,13 @@
 const { installDependency } = require("../../lib/packageJson/installDependency")
 const { spawn } = require("../../lib/utils/spawn")
 const { cliApp } = require("../../lib/utils/cliApp")
-const { isHelpOption } = require("../../lib/utils/isHelpOption")
 const { name } = require("../../package.json")
 
 cliApp(async argv => {
-	if (argv.find(isHelpOption)) {
-		console.log("Run without arguments to install module-scripts in your project.")
+	if (argv[0] === "init" && argv.length === 1) {
+		await installDependency(name)
+		await spawn(name, ["init"])
 		return
 	}
-	await installDependency(name)
-	await spawn("module-scripts", ["init"])
+	console.log("Run `nmx init` to install module-scripts in your project.")
 })

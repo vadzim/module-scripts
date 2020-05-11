@@ -4,6 +4,7 @@
   "main": "lib/index.js",
   "license": "MIT",
   "bin": {
+    "nmx": "scripts/module-scripts.js",
     "module-scripts": "scripts/module-scripts.js"
   },
   "description": "Opinioned scripts for maintaing npm module. Includes linting, testing, transpiling.",
